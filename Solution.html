@@ -60,6 +60,27 @@
 			// Prompt user to enter their location manually
 		}
 	</script>
+	<script>
+ 
+        // Initialize and add the map
+        function initMap() {
+ 
+            // The location of Geeksforgeeks office
+            const gfg_office = {
+                lat: 25.1436135,
+                lng: 55.2547099
+            };
+ 
+            // Create the map, centered at gfg_office
+            const map = new google.maps.Map(
+                    document.getElementById("map"), {
+ 
+                // Set the zoom of the map
+                zoom: 17.56,
+                center: gfg_office,
+            });
+        }
+    </script>
 	<iframe
 		width="600"
 		height="450"
